@@ -1,23 +1,15 @@
 [tool.poetry]
 name = "my_chain"
 version = "0.1.0"
-description = ""
+description = "A short description of your project"
 authors = ["Your Name <you@example.com>"]
-readme = "README.md"
-packages = [
-    { include = "app" },
-]
+dependencies = { python = "^3.10" }
 
-[tool.poetry.dependencies]
-python = "^3.11"
-uvicorn = "^0.23.2"
-langserve = {extras = ["server"], version = ">=0.0.30"}
-pydantic = "<2"
-
-
-[tool.poetry.group.dev.dependencies]
-langchain-cli = ">=0.0.15"
+[tool.langserve]
+# export_module 指定模块路径，模块中应包含所需的导出属性
+export_module = "fake_module.my_chain"  # 例如，这里是模块路径
+export_attr = "chain"  # 导出的属性名（例如函数名或类名）
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
