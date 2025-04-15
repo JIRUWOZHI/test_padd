@@ -1,0 +1,4 @@
+[tool.langserve]
+package_name = "fake_module"
+module = "fake_module.my_chain"
+attr = "chain"
