@@ -1,4 +1,17 @@
+[tool.poetry]
+name = "my_chain"
+version = "0.1.0"
+description = "A short description of your project"
+authors = ["Your Name <you@example.com>"]
+
 [tool.langserve]
-package_name = "fake_module"
-module = "fake_module.my_chain"
-attr = "chain"
+package_name = "fake_module"  # 你的包名称
+module = "fake_module.my_chain"  # 你的模块路径
+attr = "chain"  # 你的属性（或链）
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
