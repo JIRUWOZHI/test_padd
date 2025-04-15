@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "my_chain"
+name = "test"
 version = "0.1.0"
 description = "A short description of your project"
 authors = ["Your Name <you@example.com>"]
