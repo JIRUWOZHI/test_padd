@@ -7,7 +7,7 @@ authors = ["Your Name <you@example.com>"]
 [tool.langserve]
 package_name = "fake_module"  # 你的包名称
 module = "fake_module.my_chain"  # 你的模块路径
-attr = "chain"  # 你的属性（或链）
+export_attr = "chain"
 
 [tool.poetry.dependencies]
 python = "^3.10"
